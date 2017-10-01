@@ -10,7 +10,7 @@ def home_controller():
 
 @app.route('/quad')
 def quad_controller():
-    return 'Quad page'
+    return render_template('quadrupole.html')
 
 
 if __name__ == '__main__':
