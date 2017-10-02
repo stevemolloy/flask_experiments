@@ -18,9 +18,9 @@ def acc_num_controller():
     return render_template('acc_num.html')
 
 
-@app.route('/acceleration/model')
+@app.route('/acceleration/pi_mode')
 def acc_model_controller():
-    return render_template('acc_model.html')
+    return render_template('pi_mode_model.html')
 
 
 @app.route('/space_charge')
