@@ -25,7 +25,7 @@ def acc_model_controller():
 
 @app.route('/space_charge')
 def space_charge_controller():
-    return render_template('space_holder_template.html', element_type='space_charge')
+    return render_template('space_charge.html')
 
 
 if __name__ == '__main__':
