@@ -28,9 +28,11 @@ def space_charge_controller():
     return render_template('space_charge.html')
 
 
-@app.route('/quad_calcs')
+@app.route('/quad_calcs', methods=['POST', 'GET'])
 def quad_calcs():
-    return str(request)
+    # result = request.form
+    # return render_template("result.html",result = result)
+    return request.args.to_dict().__repr__()
 
 
 if __name__ == '__main__':
