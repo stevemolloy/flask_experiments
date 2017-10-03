@@ -3,7 +3,7 @@
 {% block body %}
     <div class="container">
       <h2>Quadrupole definition</h2>
-      <form class="form-horizontal" action="/action_page.php">
+      <form class="form-horizontal" action="/quad_calcs">
 
         <div class="form-group">
           <label class="control-label col-sm-2" for="email">Beam Kinetic Energy (MeV):</label>
@@ -15,7 +15,7 @@
         <div class="form-group">
           <label class="control-label col-sm-2" for="sel1">Particle Species:</label>
           <div class="col-sm-10">
-              <select class="form-control" id="sel1">
+              <select class="form-control" id="particle_species" placeholder="Value" name="particle_species">
                 <option>Protons</option>
                 <option>Electrons</option>
               </select>

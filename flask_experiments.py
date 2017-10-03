@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -26,6 +26,11 @@ def acc_model_controller():
 @app.route('/space_charge')
 def space_charge_controller():
     return render_template('space_charge.html')
+
+
+@app.route('/quad_calcs')
+def quad_calcs():
+    return str(request)
 
 
 if __name__ == '__main__':
