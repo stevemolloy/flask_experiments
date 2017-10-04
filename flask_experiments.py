@@ -30,7 +30,8 @@ def space_charge_controller():
 
 @app.route('/quad_calcs')
 def quad_calcs():
-    return request.args.to_dict().__repr__()
+    result = request.args
+    return render_template("result.html",result = result)
 
 
 if __name__ == '__main__':
